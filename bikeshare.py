@@ -16,14 +16,15 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     CRED = '\033[91m'
+    CGREEN = '\033[92m'
     CEND = '\033[0m'
     print('Hello! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True:
         try:
-            print("\n To see the bikeshare data for a selected city")
+            print(CGREEN + "\n To see the bikeshare data for a selected city")
             print("Please enter one of these cities")
-            print("Chicago, New York, or Washington \n")
+            print("Chicago, New York, or Washington \n" +CEND)
             city = input().lower()
             if city == "new york":
                 city = "new york city"
