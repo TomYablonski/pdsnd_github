@@ -124,8 +124,9 @@ def load_data(city, month, day):
 
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
-
-    print('\nCalculating The Most Frequent Times of Travel...\n')
+    CEND = '\033[0m'
+    CBOLD = '\033[1m'
+    print(CBOLD + '\nCalculating The Most Frequent Times of Travel...\n' + CEND)
     start_time = time.time()
 
     # TO DO: display the most common month
@@ -154,8 +155,10 @@ def time_stats(df):
 
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
+    CEND = '\033[0m'
+    CBOLD = '\033[1m'
 
-    print('\nCalculating The Most Popular Stations and Trip...\n')
+    print(CBOLD + '\nCalculating The Most Popular Stations and Trip...\n' + CEND)
     start_time = time.time()
 
     # TO DO: display most commonly used start station
@@ -176,8 +179,10 @@ def station_stats(df):
 
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
+    CEND = '\033[0m'
+    CBOLD = '\033[1m'
 
-    print('\nCalculating Trip Duration...\n')
+    print(CBOLD + '\nCalculating Trip Duration...\n' + CEND)
     start_time = time.time()
 
     # TO DO: display total travel time
@@ -217,8 +222,9 @@ def user_stats(df):
     """Displays statistics on bikeshare users."""
     CRED = '\033[91m'
     CEND = '\033[0m'
+    CBOLD = '\033[1m'
 
-    print('\nCalculating User Stats...\n')
+    print(CBOLD + '\nCalculating User Stats...\n' + CEND)
     start_time = time.time()
 
     # TO DO: Display counts of user types
